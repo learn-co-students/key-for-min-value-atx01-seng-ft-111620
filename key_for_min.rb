@@ -13,10 +13,10 @@ def key_for_min_value(state_weather)
   state_weather = state_weather.to_a
   value= 1000
   key= nil 
-  state_weather.each do |i|
-      if i[1] < value
-        value = i[1]
-        key = i[0]
+  state_weather.each do |temp|
+      if temp[1] < value
+        value = temp[1]
+        key = temp[0]
       end
    end
    return key   
